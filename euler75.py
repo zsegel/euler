@@ -1,8 +1,5 @@
-import time
-
 """
 https://projecteuler.net/problem=75
-
 
 Okay. There's a formula for generating 'primitive' Pythagorean triples (a, b, c):
 
@@ -19,6 +16,7 @@ Okay. There's a formula for generating 'primitive' Pythagorean triples (a, b, c)
 This doesn't produce all Pythagorean triples, but all triples can be found by 
 multiplying the primitive triples by a constant k.
 """
+import time
 start = time.time()
 
 def are_coprime(m, n):
@@ -27,10 +25,8 @@ def are_coprime(m, n):
         m, n = (n, m%n)
     return n == 1
 
-
 # W's keys will be wire lengths; values will be Pythagorean triplets for each wire length
 W = {}
-
 
 # m's greater than 865 don't make any triangles with perimeters less than 1,500,000
 for m in range(2, 866):
@@ -56,7 +52,6 @@ for m in range(2, 866):
                 else:
                     W[k*wire] = [[k*side for side in t]]
                 k += 1
-
 
 # count the wire lengths in W that correspond to only one triple
 count = 0
