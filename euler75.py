@@ -2,7 +2,6 @@
 https://projecteuler.net/problem=75
 
 Okay. Let's start with the triples and work backwards to the wires.
-
 There's apparently a formula for generating 'primitive' Pythagorean triples (a, b, c):
 
 	any positive integers m and n, such that
