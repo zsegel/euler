@@ -55,12 +55,11 @@ for m in range(2, 866):
                     W[k*wire] = [[k*side for side in t]]
                 k += 1
 
-# count the wire lengths in W that correspond to only one triple
+# count the wire lengths in W that only correspond to one triple
 count = 0
 for wire in W.keys():
     if len(W[wire]) == 1:
         count += 1
         
 end = time.time()
-
 print count, end-start
