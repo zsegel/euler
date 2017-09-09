@@ -15,7 +15,7 @@ There's apparently a formula for generating 'primitive' Pythagorean triples (a, 
 		c = m**2 + n**2
 
 This doesn't produce all Pythagorean triples, but all triples can be found by 
-multiplying the primitive triples by a constant k.
+multiplying the primitive ones we generate by a constant k.
 """
 import time
 start = time.time()
