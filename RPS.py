@@ -5,5 +5,10 @@ def RPS_response(opp, sims=10000):
     
     games_played = 1
     cumulative_regrets = [0, 0, 0]
-    my_strategy = [1/3., 1/3., 1/3.]
+    
+    my_payoffs = np.array([
+        [0, -1, 1],
+        [1, 0, -1],
+        [-1, 1, 0]])
+    
     
